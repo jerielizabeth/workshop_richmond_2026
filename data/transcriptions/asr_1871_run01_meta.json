@@ -1,0 +1,39 @@
+{
+  "run_id": "asr_1871_run01",
+  "source_file": "ASR1871.pdf",
+  "image_file": "data/images/asr_1871_300dpi.png",
+  "image_dpi": 300,
+  "image_size": [
+    2319,
+    3438
+  ],
+  "model_id": null,
+  "model_label": "Sol",
+  "model_label_source": "researcher-selected session model",
+  "model_id_note": "Exact runtime model ID not exposed to this session; not inferred from model label.",
+  "execution_mode": "in_session_visual_transcription",
+  "token_usage": null,
+  "token_usage_note": "Not exposed by the session; no API call made.",
+  "prompt_file": "prompts/transcribe_v1.md",
+  "prompt_version": "transcribe_v1",
+  "prompt_sha256": "6b2bd5ce9a8ebd79c1b1999d7101b92f737388f0b165b8a20a18398f7f859390",
+  "source_sha256": "85bfabc60dd0192857b86339baa53472aab14f80320a0c132b67ba431d8fea1b",
+  "image_sha256": "5ac83ac7e1ee957174f993cb6ef29d3a309bf122dd489c7e511c5fdc14ab145c",
+  "run_datetime": "2026-11-07T14:31:31.129954+00:00",
+  "has_table": true,
+  "page_text": {
+    "title": "SEVENTH-DAY ADVENTIST STATISTICS, 1871",
+    "subtitle": "General Conference Summary for the Year 1871",
+    "intro": "",
+    "notes": "",
+    "citation": "Copied from: Review and Herald, Battle Creek, Mich.,\nVol. 37, No.    p. 68, Feb. 14, 1871.",
+    "session": "Ninth Annual Session\nFebruary 7, 1871.",
+    "archive_page_number": "6",
+    "annotations": [
+      "Feb",
+      "Feb. 1871"
+    ]
+  },
+  "output_contract": "Session-authored JSON; checked locally, not API-constrained structured output.",
+  "response_note": "Exact bytes of the session-authored structured reply supplied to this script; not an API response."
+}

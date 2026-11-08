@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ASR review desk</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:14px system-ui,sans-serif;color:#24332d;background:#f4f6f3}
+header{padding:14px 20px;border-bottom:1px solid #d4ddd6;background:white;display:flex;gap:20px;align-items:center;justify-content:space-between}
+h1{font-size:20px;margin:0 0 4px}p{margin:0;color:#54635a}.tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+button,.upload{border:1px solid #bdcbbf;background:#fff;border-radius:6px;padding:8px 12px;color:#24332d;cursor:pointer;font:inherit}
+button.primary{background:#245b43;color:white;border-color:#245b43}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #42a57a;outline-offset:1px}
+main{display:grid;grid-template-columns:48% 52%;height:calc(100vh - 85px);min-height:500px}.source,.review{min-width:0;display:flex;flex-direction:column;overflow:hidden}
+.source{border-right:2px solid #bdcbbf}.bar{background:#e8eee8;padding:10px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;min-height:56px}
+iframe{width:100%;height:100%;border:0;background:#cbd0cc}.document{flex:1;overflow:auto;min-height:0;background:#d2d8d3}.document img{width:150%;max-width:none;display:block}#scan{display:none}
+.review .bar{background:white}.notice{padding:8px 14px;background:#fff8dc;color:#66501c;font-size:12px;border-bottom:1px solid #e3d4a1}
+input,select,textarea{font:inherit;border:1px solid #bdcbbf;border-radius:4px;padding:6px;max-width:100%;background:white;color:inherit}
+#reviewer{width:150px}#filter{flex:1;min-width:120px}#progress{font-size:12px;white-space:nowrap}
+.grid{flex:1;overflow:auto;background:#fff}table{border-collapse:separate;border-spacing:0;width:100%;font-size:13px}th{position:sticky;top:0;z-index:2;background:#e8eee8;text-align:left;padding:9px;border-bottom:1px solid #bdcbbf;white-space:nowrap}
+td{border-bottom:1px solid #e2e8e2;padding:7px;vertical-align:top}tr:nth-child(even){background:#f7f9f6}tr.flagged{background:#fff6da}tr.done{box-shadow:inset 4px 0 #35835a}td input,td select{width:100%;min-width:100px}td textarea{width:100%;min-width:150px;min-height:52px;resize:vertical}
+.printed{font:15px ui-monospace,monospace;white-space:pre-wrap;min-width:95px}.small{font-size:11px;color:#617267}.label{min-width:140px}.badge{display:inline-block;color:#79580a;background:#ffe9a7;border-radius:4px;padding:2px 5px;margin-top:4px;font-size:10px}
+footer{padding:8px 14px;font-size:12px;background:#e8eee8}#message{color:#245b43}#file{display:none}
+@media(max-width:850px){main{grid-template-columns:45% 55%}header{align-items:flex-start}h1{font-size:17px}.tools{gap:4px}button,.upload{padding:6px 8px}}
+</style>
+<header><div><h1 id="title">ASR review desk</h1><p>Compare each printed cell, then record your judgement.</p></div>
+<div class="tools"><label class="upload" for="file">Load review CSV</label><input type="file" id="file" accept=".csv,text/csv"><button class="primary" id="download">Download review CSV</button></div></header>
+<main>
+<section class="source" aria-label="Original source">
+<div class="bar"><strong>Original source</strong><button id="pdfButton">PDF</button><button id="imageButton">Page image + zoom</button><label id="zoomLabel" hidden>Zoom <input id="zoom" type="range" min="80" max="280" value="150"></label></div>
+<div class="document"><iframe id="pdf" title="Original ASR PDF"></iframe><img id="scan" alt="300 DPI rendering of the original source page"></div>
+</section>
+<section class="review" aria-label="Review spreadsheet">
+<div class="bar"><label>Reviewer <input id="reviewer" placeholder="Your name"></label><input id="filter" aria-label="Search review cells" placeholder="Find a conference or heading"><label><input id="pending" type="checkbox"> Pending only</label><span id="progress"></span></div>
+<div class="notice">Edits stay in this tab until downloaded. Download your CSV before closing; load it here to resume. The project’s review file is not overwritten.</div>
+<div class="grid"><table><thead><tr><th>Cell</th><th>Conference / heading</th><th>Transcribed</th><th>Verdict</th><th>Correct reading</th><th>Reason</th></tr></thead><tbody id="rows"></tbody></table></div>
+<footer><span id="message">No new edits.</span> Original transcription values are read-only. A blank correction can mean the source cell is blank; explain it in Reason.</footer>
+</section></main>
+<script id="data" type="application/json">__REVIEW_DATA__</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('data').textContent);
+let records=data.review.map(row=>({...row})),dirty=false;
+const byId=id=>document.getElementById(id),key=row=>`${row.row_index}:${row.column_index}`;
+const original=new Map(data.cells.map(row=>[key(row),row]));
+const failedColumns=new Set(data.checks.filter(c=>c.check==='arithmetic'&&c.status==='fail').map(c=>c.column_index));
+const fields=Object.keys(records[0]);
+byId('title').textContent=`ASR ${data.year} · ${data.run} review`;
+document.title=`ASR ${data.year} review desk`;
+function fromBase64(base64,type){const bytes=Uint8Array.from(atob(base64),c=>c.charCodeAt(0));return URL.createObjectURL(new Blob([bytes],{type}));}
+byId('pdf').src=fromBase64(data.pdf,'application/pdf')+'#toolbar=1&navpanes=0&view=FitH';
+byId('scan').src=fromBase64(data.image,'image/png');
+function mode(image){byId('pdf').style.display=image?'none':'block';byId('scan').style.display=image?'block':'none';byId('zoomLabel').hidden=!image;}
+byId('pdfButton').onclick=()=>mode(false);byId('imageButton').onclick=()=>mode(true);
+byId('zoom').oninput=()=>byId('scan').style.width=byId('zoom').value+'%';
+function updateProgress(){byId('progress').textContent=`${records.filter(r=>r.verdict.trim()).length} / ${records.length} reviewed`;}
+function edit(row,field,value,tr){row[field]=value;dirty=true;
+ if(byId('reviewer').value.trim())row.reviewer=byId('reviewer').value.trim();
+ const now=new Date();row.review_date=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+ tr.classList.toggle('done',!!row.verdict.trim());byId('message').textContent='Unsaved edits — download a review CSV to keep them.';updateProgress();}
+function textCell(tr,text,className=''){const td=document.createElement('td');td.textContent=text;td.className=className;tr.append(td);return td;}
+function draw(){const query=byId('filter').value.toLowerCase();byId('rows').replaceChildren();
+ for(const row of records){if(byId('pending').checked&&row.verdict.trim())continue;
+ if(query&&!`${row.row_label} ${row.column_heading} ${row.value_transcribed}`.toLowerCase().includes(query))continue;
+ const source=original.get(key(row)),tr=document.createElement('tr');
+ const flagged=!!source.flags||failedColumns.has(row.column_index);
+ tr.classList.toggle('flagged',flagged);tr.classList.toggle('done',!!row.verdict.trim());
+ textCell(tr,`${row.row_index}, ${row.column_index}`,'small');
+ const label=textCell(tr,'','label');const strong=document.createElement('strong');strong.textContent=row.row_label;label.append(strong,document.createElement('br'));
+ const heading=document.createElement('span');heading.className='small';heading.textContent=row.column_heading;label.append(heading);
+ if(flagged){const badge=document.createElement('span');badge.className='badge';badge.textContent=source.flags||'total mismatch';label.append(document.createElement('br'),badge);}
+ label.title=source.note||'';textCell(tr,row.value_transcribed===''?'[blank]':row.value_transcribed,'printed');
+ for(const field of ['verdict','corrected_reading','reason']){const td=textCell(tr,'');let control;
+ if(field==='verdict'){control=document.createElement('select');for(const value of ['', 'correct','corrected','uncertain']){const option=document.createElement('option');option.value=value;option.textContent=value||'Not checked';control.append(option);}if(row.verdict&&!['correct','corrected','uncertain'].includes(row.verdict)){const option=document.createElement('option');option.value=row.verdict;option.textContent=row.verdict;control.append(option);}}
+ else control=document.createElement(field==='reason'?'textarea':'input');
+ control.value=row[field];control.setAttribute('aria-label',`${field.replaceAll('_',' ')} for row ${row.row_index} column ${row.column_index}`);
+ control.addEventListener(field==='verdict'?'change':'input',()=>edit(row,field,control.value,tr));td.append(control);}
+ byId('rows').append(tr);
+ }updateProgress();}
+byId('filter').oninput=draw;byId('pending').onchange=draw;
+function quote(value){value=String(value??'');return /[",\r\n]/.test(value)?'"'+value.replaceAll('"','""')+'"':value;}
+byId('download').onclick=()=>{
+ const text=[fields.join(','),...records.map(row=>fields.map(f=>quote(row[f])).join(','))].join('\r\n')+'\r\n';
+ const url=URL.createObjectURL(new Blob([text],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=data.run+'_review_draft.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ dirty=false;byId('message').textContent='CSV download requested. Keep the downloaded draft to resume your review.';
+};
+function parseCSV(text){const rows=[];let row=[],value='',quoted=false;text=text.replace(/^\uFEFF/,'');
+ for(let i=0;i<text.length;i++){const c=text[i];if(quoted){if(c==='"'&&text[i+1]==='"'){value+='"';i++;}else if(c==='"')quoted=false;else value+=c;}
+ else if(c==='"')quoted=true;else if(c===','){row.push(value);value='';}else if(c==='\n'||c==='\r'){if(c==='\r'&&text[i+1]==='\n')i++;row.push(value);rows.push(row);row=[];value='';}else value+=c;}
+ if(quoted)throw Error('Unclosed quote in CSV.');if(value||row.length){row.push(value);rows.push(row);}return rows;}
+byId('file').onchange=async event=>{const file=event.target.files[0];if(!file)return;
+ try{if(dirty&&!confirm('Replace the unsaved edits in this tab with the selected CSV?'))return;
+ const rows=parseCSV(await file.text()),headers=rows.shift();if(fields.some(f=>!headers.includes(f)))throw Error('The CSV is missing required review columns.');
+ const loaded=rows.filter(row=>row.some(Boolean)).map(values=>Object.fromEntries(headers.map((h,i)=>[h,values[i]??''])));
+ if(loaded.length!==records.length||new Set(loaded.map(key)).size!==records.length)throw Error('CSV has missing or duplicate cells.');
+ for(const row of loaded){const source=original.get(key(row));if(!source||row.run_id!==data.run||row.value_transcribed!==source.value||row.row_label!==source.row_label||row.column_heading!==source.column_heading)throw Error('CSV does not match this transcription run.');}
+ records=loaded;dirty=false;draw();byId('message').textContent='Loaded '+file.name;
+ }catch(error){alert(error.message);}finally{event.target.value='';}};
+addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
+draw();
+</script>
+</html>

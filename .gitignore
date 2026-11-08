@@ -1,1 +1,6 @@
 .DS_Store
+.venv/
+__pycache__/
+*.pyc
+# Rendered page images can be rebuilt from the source PDFs.
+data/images/

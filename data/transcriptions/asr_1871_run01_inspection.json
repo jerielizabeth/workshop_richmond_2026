@@ -1,0 +1,33 @@
+{
+  "run_id": "asr_1871_run01",
+  "inspection_note": "Supplementary record of images inspected during the single in-session visual transcription, not an additional transcription run.",
+  "images": [
+    {
+      "file": "data/images/asr_1871_300dpi.png",
+      "pixels": [
+        2319,
+        3438
+      ],
+      "viewer_display_pixels": [
+        1294,
+        1920
+      ]
+    },
+    {
+      "file": "data/images/asr_1871_300dpi_crop.png",
+      "pixels": [
+        1810,
+        1280
+      ],
+      "crop_box": [
+        130,
+        700,
+        1940,
+        1980
+      ],
+      "viewer_detail": "original"
+    }
+  ],
+  "render_command": ".venv/bin/python scripts/render_pages.py --year 1871 --crop 130 700 1940 1980",
+  "internal_image_processing": "Not exposed by session; no assumption about internal resolution."
+}

@@ -33,13 +33,15 @@ richmond-workshop/
 ├── data/
 │   ├── images/                ← page images rendered from the PDFs (generated; can be rebuilt)
 │   ├── transcriptions/        ← verbatim model output and run metadata, one set per run
-│   ├── validation/            ← validation reports
+│   ├── validation/            ← validation reports (generated)
+│   ├── review/                ← human review records, written by hand (one file per run)
 │   ├── processed/             ← cleaned, structured tables ready for analysis
 │   └── reference/             ← source register and lookup tables (units, measures)
 ├── prompts/                   ← versioned prompts sent to the vision model
 ├── scripts/                   ← Python scripts, one per pipeline stage
 └── docs/
-    └── source_notes.md        ← year-by-year observations about the source pages
+    ├── source_notes.md        ← year-by-year observations about the source pages
+    └── pilot_plan_1871.md     ← plan for the first end-to-end pilot run
 ```
 
 Folders that don't exist yet will be created as the pipeline is built. Update this tree when the layout changes.
@@ -47,6 +49,7 @@ Folders that don't exist yet will be created as the pipeline is built. Update th
 **Rules**
 - Never modify, rename, move, or delete anything in `source documents/`.
 - Generated files (`data/images/`, `data/validation/`) must be reproducible from scripts. Never hand-edit them.
+- Review files in `data/review/` are the opposite: they are written by a person and are the record of human judgement. Scripts may create a blank review template, but must never overwrite or alter an existing review file.
 - Never overwrite a transcription in `data/transcriptions/`. Write a new run instead. The run used downstream is recorded in `data/reference/source_register.csv` (column `current_run_id`).
 
 ---
@@ -103,7 +106,7 @@ Each stage writes its output to disk so it can be inspected on its own.
 ### 4.3 AI vision transcription
 
 - **Run metadata:** every transcription run records, in its metadata file:
-  - the exact model ID
+  - the exact model ID when exposed; otherwise a null ID, the researcher-selected session model label, and an explicit explanation
   - the prompt file and version used (from `prompts/`)
   - the date and time of the run
   - the source file and image settings
@@ -148,7 +151,7 @@ A cell can carry several flags, separated by `;`.
 - **Arithmetic checks:** where the source prints totals, recompute them from the rows and report mismatches. A mismatch may be a transcription error *or* an error in the original. Check the image before assuming either.
 - **Format checks:** numbers parse as numbers, money values have valid dollars and cents, and no unexpected blank cells.
 - **Narrative checks:** where the page text states figures (e.g. the 1876 note on gains since last year), compare them with the table.
-- **Human spot-check:** a person compares a sample of transcribed values with the page image. Record who checked what, and when, in the validation report.
+- **Human spot-check:** a person compares transcribed values with the page image. Record who checked what, and when, in the review file for that run in `data/review/` (not in the generated validation report).
 
 ### 4.6 Provenance
 
@@ -284,14 +287,14 @@ How agents should work with the researcher and workshop participants:
 
 ## 8. Workflows
 
-*Planned. Script names are placeholders until the scripts exist; update these steps as they are built.*
+*Rendering, session-transcription import, and validation scripts now exist. Structure and combine stages remain planned until human review and unit mappings are complete.*
 
 ### 8.1 Add a new year
 1. Follow "Adding a new year" in §3: download, name, register, and write source notes.
 2. Render the page: `python scripts/render_pages.py --year YYYY`
-3. Transcribe: `python scripts/transcribe.py --year YYYY` (each run gets a new run number). If the page has no table, the run records `has_table: false` and steps 4–6 are skipped.
-4. Validate: `python scripts/validate.py --year YYYY`
-5. Review the validation report. Check every flagged cell against the image, and record your decisions in the cell `note` or §9.
+3. Transcribe visually with the available session model using `prompts/transcribe_v1.md`. Save its JSON reply, then import it with `python scripts/transcribe.py --year YYYY --response /path/to/reply.json --model-label Sol`. This checks the reply's layout and creates a new permanent run without calling an API. If there is no table, skip table processing.
+4. Validate: `python scripts/validate.py --year YYYY --run RUN_ID --expected-rows ROWS --expected-columns COLUMNS`. Supply dimensions from inspection of that page; for 1871 these are 14 and 10.
+5. Review the validation report. Record human decisions only in the run's `data/review/` file. For the 1871 pilot, check every cell.
 6. If the year introduces new unit names or column headings, add them to `unit_names.csv` / `measures.csv`. Ask the researcher about any new mapping.
 7. Set `current_run_id` in the source register.
 8. Rebuild the processed dataset: `python scripts/build_dataset.py`
@@ -305,8 +308,7 @@ How agents should work with the researcher and workshop participants:
 ### 8.3 Review a transcription
 1. Open the page image next to the validation report.
 2. Check every flagged cell, then a random sample of at least 10 unflagged cells.
-3. For each problem, record the correct reading and the reason in `note`. Never edit the original run file. Corrections are applied in stage 4 from the review record.
-4. Add the reviewer's name, the date, and the cells checked to the validation report.
+3. Record every cell checked in the run's review file, `data/review/asr_{year}_run{NN}_review.csv`: the reviewer's name, the date, the cell position, a verdict, and, for each problem, the correct reading and the reason. Never edit the original run file. Corrections are applied in stage 4 from the review file.
 
 ---
 
@@ -316,6 +318,11 @@ Record significant decisions here, newest first, with the date, the decision, an
 
 | Date | Decision | Reasoning |
 |---|---|---|
+| 2026-11-07 | Use the available Sol model in the Codex session, without an API key or a separate API call. This supersedes the earlier API tooling decision below. Record the selected model label; leave exact runtime ID and token usage null when unavailable. | Researcher explicitly changed the tooling; do not invent API provenance or an exact model snapshot. |
+| 2026-11-07 | "Mich.& Ind." (1871–72) is its own unit, `michigan_indiana`, not the same unit as `michigan`; predecessor/successor links still to be decided | Researcher's decision |
+| 2026-11-07 | Pipeline is run with Codex and OpenAI models; transcription uses the OpenAI API (key from `OPENAI_API_KEY`), and the exact model ID returned by the API is recorded in each run's metadata | Researcher's choice of tooling for the workshop |
+| 2026-11-07 | Human review records go in `data/review/`, one hand-written file per run; validation reports stay fully generated | Resolves a conflict: §8.3 asked reviewers to write in the validation report, but §2 forbids hand-editing generated files |
+| 2026-11-07 | For the 1871 pilot, the researcher checks every cell by hand (not just flagged cells plus a sample) | Gives a measured accuracy figure for the method before scaling to other years |
 | 2026-11-07 | 1874 is recorded as a year with no data: listed in the source register with `has_table` = false, with no rows in the processed dataset | The page states "No Reports available."; listing it documents the gap rather than hiding it |
 | 2026-11-07 | One transcription run per page | Validation and human review are the error checks; a second run adds cost and complexity for the demo |
 | 2026-11-07 | Carried-forward values are kept as observations, flagged `carried_forward_suspected` | Keeps the record complete; analysts can choose to exclude flagged values |

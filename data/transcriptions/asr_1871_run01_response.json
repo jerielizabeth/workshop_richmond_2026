@@ -1,0 +1,1278 @@
+{
+  "has_table": true,
+  "page_text": {
+    "title": "SEVENTH-DAY ADVENTIST STATISTICS, 1871",
+    "subtitle": "General Conference Summary for the Year 1871",
+    "intro": "",
+    "notes": "",
+    "citation": "Copied from: Review and Herald, Battle Creek, Mich.,\nVol. 37, No.    p. 68, Feb. 14, 1871.",
+    "session": "Ninth Annual Session\nFebruary 7, 1871.",
+    "archive_page_number": "6",
+    "annotations": [
+      "Feb",
+      "Feb. 1871"
+    ]
+  },
+  "cells": [
+    {
+      "row_index": 1,
+      "column_index": 0,
+      "row_label": "Maine",
+      "column_heading": "Names of Conferences.",
+      "value": "Maine",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 1,
+      "row_label": "Maine",
+      "column_heading": "Ministers",
+      "value": "1",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 2,
+      "row_label": "Maine",
+      "column_heading": "Licentiates",
+      "value": "5",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 3,
+      "row_label": "Maine",
+      "column_heading": "Churches",
+      "value": "9",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 4,
+      "row_label": "Maine",
+      "column_heading": "Members",
+      "value": "194",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 5,
+      "row_label": "Maine",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "$ 950.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 6,
+      "row_label": "Maine",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "10.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 7,
+      "row_label": "Maine",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "940.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 8,
+      "row_label": "Maine",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 1,
+      "column_index": 9,
+      "row_label": "Maine",
+      "column_heading": "S.B. Fund on hand",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 0,
+      "row_label": "New England",
+      "column_heading": "Names of Conferences.",
+      "value": "New England",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 1,
+      "row_label": "New England",
+      "column_heading": "Ministers",
+      "value": "2",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 2,
+      "row_label": "New England",
+      "column_heading": "Licentiates",
+      "value": "2",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 3,
+      "row_label": "New England",
+      "column_heading": "Churches",
+      "value": "16",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 4,
+      "row_label": "New England",
+      "column_heading": "Members",
+      "value": "300",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 5,
+      "row_label": "New England",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "3044.60",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 6,
+      "row_label": "New England",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 7,
+      "row_label": "New England",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "3044.60",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 8,
+      "row_label": "New England",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "160.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 2,
+      "column_index": 9,
+      "row_label": "New England",
+      "column_heading": "S.B. Fund on hand",
+      "value": "500.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 0,
+      "row_label": "Vermont",
+      "column_heading": "Names of Conferences.",
+      "value": "Vermont",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 1,
+      "row_label": "Vermont",
+      "column_heading": "Ministers",
+      "value": "5",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 2,
+      "row_label": "Vermont",
+      "column_heading": "Licentiates",
+      "value": "4",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 3,
+      "row_label": "Vermont",
+      "column_heading": "Churches",
+      "value": "12",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 4,
+      "row_label": "Vermont",
+      "column_heading": "Members",
+      "value": "262",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 5,
+      "row_label": "Vermont",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "1501.34",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 6,
+      "row_label": "Vermont",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "172.01",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 7,
+      "row_label": "Vermont",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "1329.33",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 8,
+      "row_label": "Vermont",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "50.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 3,
+      "column_index": 9,
+      "row_label": "Vermont",
+      "column_heading": "S.B. Fund on hand",
+      "value": "34.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 0,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "Names of Conferences.",
+      "value": "N.Y. & Penn.",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 1,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "Ministers",
+      "value": "5",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 2,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "Licentiates",
+      "value": "5",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 3,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "Churches",
+      "value": "24",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 4,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "Members",
+      "value": "589",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 5,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "2954.07",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 6,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "201.54",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 7,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "2752.53",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 8,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 4,
+      "column_index": 9,
+      "row_label": "N.Y. & Penn.",
+      "column_heading": "S.B. Fund on hand",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 0,
+      "row_label": "Ohio",
+      "column_heading": "Names of Conferences.",
+      "value": "Ohio",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 1,
+      "row_label": "Ohio",
+      "column_heading": "Ministers",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 2,
+      "row_label": "Ohio",
+      "column_heading": "Licentiates",
+      "value": "4",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 3,
+      "row_label": "Ohio",
+      "column_heading": "Churches",
+      "value": "10",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 4,
+      "row_label": "Ohio",
+      "column_heading": "Members",
+      "value": "194",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 5,
+      "row_label": "Ohio",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "1220.01",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 6,
+      "row_label": "Ohio",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "108.50",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 7,
+      "row_label": "Ohio",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "1111.41",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 8,
+      "row_label": "Ohio",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 5,
+      "column_index": 9,
+      "row_label": "Ohio",
+      "column_heading": "S.B. Fund on hand",
+      "value": "675.25",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 0,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "Names of Conferences.",
+      "value": "Mich.& Ind.",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 1,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "Ministers",
+      "value": "11",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 2,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "Licentiates",
+      "value": "14",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 3,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "Churches",
+      "value": "53",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 4,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "Members",
+      "value": "1543",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 5,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "5779.81",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 6,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "1851.93",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 7,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "3927.88",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 8,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 6,
+      "column_index": 9,
+      "row_label": "Mich.& Ind.",
+      "column_heading": "S.B. Fund on hand",
+      "value": "2000.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 0,
+      "row_label": "Wisconsin",
+      "column_heading": "Names of Conferences.",
+      "value": "Wisconsin",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 1,
+      "row_label": "Wisconsin",
+      "column_heading": "Ministers",
+      "value": "2",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 2,
+      "row_label": "Wisconsin",
+      "column_heading": "Licentiates",
+      "value": "4",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 3,
+      "row_label": "Wisconsin",
+      "column_heading": "Churches",
+      "value": "17",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 4,
+      "row_label": "Wisconsin",
+      "column_heading": "Members",
+      "value": "450",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 5,
+      "row_label": "Wisconsin",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "2551.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 6,
+      "row_label": "Wisconsin",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 7,
+      "row_label": "Wisconsin",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "2551.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 8,
+      "row_label": "Wisconsin",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "500.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 7,
+      "column_index": 9,
+      "row_label": "Wisconsin",
+      "column_heading": "S.B. Fund on hand",
+      "value": "100.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 0,
+      "row_label": "Illinois",
+      "column_heading": "Names of Conferences.",
+      "value": "Illinois",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 1,
+      "row_label": "Illinois",
+      "column_heading": "Ministers",
+      "value": "2",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 2,
+      "row_label": "Illinois",
+      "column_heading": "Licentiates",
+      "value": "4",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 3,
+      "row_label": "Illinois",
+      "column_heading": "Churches",
+      "value": "8",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 4,
+      "row_label": "Illinois",
+      "column_heading": "Members",
+      "value": "178",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 5,
+      "row_label": "Illinois",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "875.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 6,
+      "row_label": "Illinois",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 7,
+      "row_label": "Illinois",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "875.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 8,
+      "row_label": "Illinois",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 8,
+      "column_index": 9,
+      "row_label": "Illinois",
+      "column_heading": "S.B. Fund on hand",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 0,
+      "row_label": "Minnesota",
+      "column_heading": "Names of Conferences.",
+      "value": "Minnesota",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 1,
+      "row_label": "Minnesota",
+      "column_heading": "Ministers",
+      "value": "2",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 2,
+      "row_label": "Minnesota",
+      "column_heading": "Licentiates",
+      "value": "2",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 3,
+      "row_label": "Minnesota",
+      "column_heading": "Churches",
+      "value": "9",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 4,
+      "row_label": "Minnesota",
+      "column_heading": "Members",
+      "value": "250",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 5,
+      "row_label": "Minnesota",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "990.50",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 6,
+      "row_label": "Minnesota",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 7,
+      "row_label": "Minnesota",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "990.50",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 8,
+      "row_label": "Minnesota",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "100.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 9,
+      "column_index": 9,
+      "row_label": "Minnesota",
+      "column_heading": "S.B. Fund on hand",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 0,
+      "row_label": "Iowa",
+      "column_heading": "Names of Conferences.",
+      "value": "Iowa",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 1,
+      "row_label": "Iowa",
+      "column_heading": "Ministers",
+      "value": "2",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 2,
+      "row_label": "Iowa",
+      "column_heading": "Licentiates",
+      "value": "4",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 3,
+      "row_label": "Iowa",
+      "column_heading": "Churches",
+      "value": "18",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 4,
+      "row_label": "Iowa",
+      "column_heading": "Members",
+      "value": "400",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 5,
+      "row_label": "Iowa",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "2400.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 6,
+      "row_label": "Iowa",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 7,
+      "row_label": "Iowa",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 8,
+      "row_label": "Iowa",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "300.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 10,
+      "column_index": 9,
+      "row_label": "Iowa",
+      "column_heading": "S.B. Fund on hand",
+      "value": "650.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 11,
+      "column_index": 0,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "Names of Conferences.",
+      "value": "Kansas & Mo.",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 11,
+      "column_index": 1,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "Ministers",
+      "value": "1",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 11,
+      "column_index": 2,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "Licentiates",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 11,
+      "column_index": 3,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "Churches",
+      "value": "5",
+      "flags": "misaligned",
+      "note": "Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+    },
+    {
+      "row_index": 11,
+      "column_index": 4,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "Members",
+      "value": "",
+      "flags": "misaligned",
+      "note": "Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+    },
+    {
+      "row_index": 11,
+      "column_index": 5,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 11,
+      "column_index": 6,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 11,
+      "column_index": 7,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 11,
+      "column_index": 8,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 11,
+      "column_index": 9,
+      "row_label": "Kansas & Mo.",
+      "column_heading": "S.B. Fund on hand",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 12,
+      "column_index": 0,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "Names of Conferences.",
+      "value": "Calif.Mis'n.",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 12,
+      "column_index": 1,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "Ministers",
+      "value": "1",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 12,
+      "column_index": 2,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "Licentiates",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 12,
+      "column_index": 3,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "Churches",
+      "value": "4",
+      "flags": "misaligned",
+      "note": "Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+    },
+    {
+      "row_index": 12,
+      "column_index": 4,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "Members",
+      "value": "130",
+      "flags": "misaligned",
+      "note": "Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+    },
+    {
+      "row_index": 12,
+      "column_index": 5,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "800.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 12,
+      "column_index": 6,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 12,
+      "column_index": 7,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "800.00",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 12,
+      "column_index": 8,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 12,
+      "column_index": 9,
+      "row_label": "Calif.Mis'n.",
+      "column_heading": "S.B. Fund on hand",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 13,
+      "column_index": 0,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "Names of Conferences.",
+      "value": "Swiss Mis'n.",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 13,
+      "column_index": 1,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "Ministers",
+      "value": "1",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 13,
+      "column_index": 2,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "Licentiates",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 13,
+      "column_index": 3,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "Churches",
+      "value": "",
+      "flags": "misaligned",
+      "note": "Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+    },
+    {
+      "row_index": 13,
+      "column_index": 4,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "Members",
+      "value": "60",
+      "flags": "misaligned",
+      "note": "Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+    },
+    {
+      "row_index": 13,
+      "column_index": 5,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 13,
+      "column_index": 6,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 13,
+      "column_index": 7,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 13,
+      "column_index": 8,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 13,
+      "column_index": 9,
+      "row_label": "Swiss Mis'n.",
+      "column_heading": "S.B. Fund on hand",
+      "value": "",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 0,
+      "row_label": "Total",
+      "column_heading": "Names of Conferences.",
+      "value": "Total",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 1,
+      "row_label": "Total",
+      "column_heading": "Ministers",
+      "value": "35",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 2,
+      "row_label": "Total",
+      "column_heading": "Licentiates",
+      "value": "48",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 3,
+      "row_label": "Total",
+      "column_heading": "Churches",
+      "value": "185",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 4,
+      "row_label": "Total",
+      "column_heading": "Members",
+      "value": "4550",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 5,
+      "row_label": "Total",
+      "column_heading": "S.B. Fund Pledged",
+      "value": "23066.42",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 6,
+      "row_label": "Total",
+      "column_heading": "S.B. Fund used by the Ch's.",
+      "value": "2343.98",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 7,
+      "row_label": "Total",
+      "column_heading": "S.B. Fund Pledged to Conf's.",
+      "value": "18322.25",
+      "flags": "",
+      "note": ""
+    },
+    {
+      "row_index": 14,
+      "column_index": 8,
+      "row_label": "Total",
+      "column_heading": "S.B. Fund Pledged to Gen. Conf.",
+      "value": "1110.00",
+      "flags": "",
+      "note": "Adjacent printed totals run together as 1110.003959.25; split by column position."
+    },
+    {
+      "row_index": 14,
+      "column_index": 9,
+      "row_label": "Total",
+      "column_heading": "S.B. Fund on hand",
+      "value": "3959.25",
+      "flags": "",
+      "note": "Adjacent printed totals run together as 1110.003959.25; split by column position."
+    }
+  ]
+}

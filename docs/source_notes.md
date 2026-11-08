@@ -68,6 +68,8 @@ Names change, merge, and split over the period. The same printed name can also c
 | Kentucky | 1876 only |
 | Ohio, Vermont, Minnesota | every year (spelled "Minesota" in 1869) |
 
+This table groups printed names by rough geography to make them easy to find. It does **not** say which names are the same unit; those decisions are in `data/reference/unit_names.csv` and the AGENTS.md §9 decisions log. For example, "Mich.& Ind." is listed beside Michigan above but is a separate unit (`michigan_indiana`, decided 2026-11-07).
+
 In 1867–68 the name column uses **ditto marks** (`"`) to repeat "Conf." from the first row (e.g. `Iowa "`).
 
 The order of rows varies from year to year, so don't rely on row position to identify a unit.
@@ -98,3 +100,25 @@ These are things noticed on a first look. Each one needs checking against the tr
 - **1876 notes:** the text says the Michigan report is incomplete, and that New England, New York and Illinois are "given as last year with a few known changes". It also mentions companies in Texas, Virginia and Maryland that aren't in the table.
 - **1876 stated gains vs. totals:** the text claims gains of 2,012 members and $11,079.85 over 1875. On a first reading, the printed totals give 2,022 members and $11,379.85. To verify.
 - **1870:** the Total row has no value for "S.B. Fund on hand".
+
+## 1871 pilot findings (2026-11-07; human review pending)
+
+The first Sol session transcription is `asr_1871_run01`: 140 cells, including
+blanks and the Total row. The 300 DPI PDF render is 2319 × 3438 pixels (one pixel
+larger in each direction than the plan's preliminary dimensions). A table crop
+at [130, 700, 1940, 1980] was also inspected without resizing. Both can be rebuilt
+with `scripts/render_pages.py`; see the run's inspection JSON for the command.
+
+Generated validation finds eight matching numeric totals and one mismatch:
+S.B. Fund Pledged sums to 23066.33, while the transcribed printed total is
+23066.42. The difference is -0.09 (sum minus printed total). This remains an
+unresolved finding, not an established error in the source. Six Churches/Members
+cells in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block carry `misaligned`
+flags, including ambiguous blank assignments. The run-together totals were read
+as 1110.00 and 3959.25 by column position.
+
+No human review has been recorded. Accuracy and the cause of the mismatch are
+unknown. The source register's current run remains blank, and no processed
+dataset has been built. Unit mappings other than the researcher's already
+approved Michigan & Indiana mapping remain pending. Wait for human review before
+recommending changes to the prompt or scaling to additional years.

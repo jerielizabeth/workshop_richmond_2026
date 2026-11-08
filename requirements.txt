@@ -1,0 +1,6 @@
+# Table analysis for the workshop and later pipeline stages.
+pandas==3.1.1
+# Renders source PDFs without requiring a separate system program.
+pypdfium2==5.15.0
+# Saves page images and prepares image crops for the vision model.
+Pillow==13.0.0

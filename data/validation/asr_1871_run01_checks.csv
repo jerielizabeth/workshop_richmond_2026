@@ -1,0 +1,52 @@
+check,status,row_index,column_index,flags,message
+completeness,pass,,,,Expected 140 cells; found 140. Missing: []. Extra: [].
+blank,review,1,8,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,1,9,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,2,6,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,4,8,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,4,9,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,5,1,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,5,8,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,6,8,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,7,6,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,8,6,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,8,8,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,8,9,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,9,6,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,9,9,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,10,6,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,10,7,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,11,2,,Blank preserved; reviewer must confirm nothing is printed.
+model_flag,review,11,3,misaligned,"Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+model_flag,review,11,4,misaligned,"Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+blank,review,11,4,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,11,5,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,11,6,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,11,7,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,11,8,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,11,9,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,12,2,,Blank preserved; reviewer must confirm nothing is printed.
+model_flag,review,12,3,misaligned,"Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+model_flag,review,12,4,misaligned,"Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+blank,review,12,6,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,12,8,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,12,9,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,13,2,,Blank preserved; reviewer must confirm nothing is printed.
+model_flag,review,13,3,misaligned,"Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+blank,review,13,3,,Blank preserved; reviewer must confirm nothing is printed.
+model_flag,review,13,4,misaligned,"Churches and Members values in the Kansas & Mo. / Calif.Mis'n. / Swiss Mis'n. block have uneven vertical placement. This assignment, including blanks, needs human review."
+blank,review,13,5,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,13,6,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,13,7,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,13,8,,Blank preserved; reviewer must confirm nothing is printed.
+blank,review,13,9,,Blank preserved; reviewer must confirm nothing is printed.
+arithmetic,pass,14,1,,Ministers: sum of reported entries 35; printed total 35; difference (sum minus total) 0.
+arithmetic,pass,14,2,,Licentiates: sum of reported entries 48; printed total 48; difference (sum minus total) 0.
+arithmetic,pass,14,3,,Churches: sum of reported entries 185; printed total 185; difference (sum minus total) 0.
+arithmetic,pass,14,4,,Members: sum of reported entries 4550; printed total 4550; difference (sum minus total) 0.
+arithmetic,fail,14,5,total_mismatch,S.B. Fund Pledged: sum of reported entries 23066.33; printed total 23066.42; difference (sum minus total) -0.09.
+arithmetic,pass,14,6,,S.B. Fund used by the Ch's.: sum of reported entries 2343.98; printed total 2343.98; difference (sum minus total) 0.00.
+arithmetic,pass,14,7,,S.B. Fund Pledged to Conf's.: sum of reported entries 18322.25; printed total 18322.25; difference (sum minus total) 0.00.
+arithmetic,pass,14,8,,S.B. Fund Pledged to Gen. Conf.: sum of reported entries 1110.00; printed total 1110.00; difference (sum minus total) 0.00.
+arithmetic,pass,14,9,,S.B. Fund on hand: sum of reported entries 3959.25; printed total 3959.25; difference (sum minus total) 0.00.
+narrative,not_applicable,,,,1871 has no narrative figures to compare.
